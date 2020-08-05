@@ -23,6 +23,7 @@
 		5EAF682B24DA409E0040092F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5EAF682D24DA409E0040092F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5EAF682E24DA409E0040092F /* CircleWindow.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CircleWindow.entitlements; sourceTree = "<group>"; };
+		5EAF683424DA42D70040092F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +40,7 @@
 		5EAF681524DA409E0040092F = {
 			isa = PBXGroup;
 			children = (
+				5EAF683424DA42D70040092F /* README.md */,
 				5EAF682024DA409E0040092F /* CircleWindow */,
 				5EAF681F24DA409E0040092F /* Products */,
 			);
