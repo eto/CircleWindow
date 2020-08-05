@@ -22,12 +22,17 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         // Create the window and set the content view. 
         window = NSWindow(
             contentRect: NSRect(x: 0, y: 0, width: 480, height: 300),
-            styleMask: [.titled, .closable, .miniaturizable, .resizable, .fullSizeContentView],
+            //styleMask: [.titled, .closable, .miniaturizable, .resizable, .fullSizeContentView],
+            styleMask: [.borderless],
             backing: .buffered, defer: false)
         window.center()
         window.setFrameAutosaveName("Main Window")
         window.contentView = NSHostingView(rootView: contentView)
         window.makeKeyAndOrderFront(nil)
+        guard let w = NSApplication.shared.windows.first else { return }
+        w.isOpaque = false
+        w.backgroundColor = .clear
+        w.isMovableByWindowBackground = true
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {

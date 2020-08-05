@@ -8,10 +8,20 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct TextView: View {
     var body: some View {
         Text("Hello, World!")
             .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .background(Color.gray)
+    }
+}
+
+struct ContentView: View {
+    var body: some View {
+        VStack {
+            TextView()
+                .mask(Circle())
+        }.frame(width: 480, height: 300)
     }
 }
 
